@@ -72,7 +72,7 @@ Understanding variable scopes is important for writing well-structured and maint
 
 >The code is here [Shape :mag_right:](Homework1.rb)
 
-# 4. A string is an object from the String class. What are the methods reverse, capitalize, and length for in ruby?
+# 4. A string is an object from the String class. What are the methods reverse, capitalize, and length for?
 
 In Ruby, the reverse, capitalize, and length methods are part of the built-in String class. Here's what each of these methods does:
 

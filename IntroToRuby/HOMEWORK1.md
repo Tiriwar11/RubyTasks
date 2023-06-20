@@ -1,6 +1,6 @@
 # HOMEWORK   :blue_book:
 
-1. What is the difference between chomp and chop?
+# 1. What is the difference between chomp and chop?
 
 In Ruby, both chomp and chop are methods that can be used to remove characters from the end of a string. However, they have slight differences in functionality.
 
@@ -28,7 +28,7 @@ puts new_string  # Output: "Hello World"
 In summary, chomp allows you to specify a specific substring to remove from the end of a string, while chop always removes the last character of the string.
 
 
-2. Which are the different variables’ scopes and what are them used for?
+# 2. Which are the different variables’ scopes and what are them used for?
 
 In Ruby, variables have different scopes that determine where they can be accessed and used within a program. The variable scopes in Ruby are as follows:
 
@@ -63,7 +63,7 @@ In Ruby, variables have different scopes that determine where they can be access
 
 Understanding variable scopes is important for writing well-structured and maintainable code, as it helps control the visibility and lifetime of variables within different parts of a program.
 
-3.  Write different programs that, based on user input, calculate the area of:
+# 3.  Write different programs that, based on user input, calculate the area of:
    * A circle
    * A triangle
    * A square
@@ -72,7 +72,7 @@ Understanding variable scopes is important for writing well-structured and maint
 
 >The code is here [Shape :mag_right:](Homework1.rb)
 
-4. A string is an object from the String class. What are the methods reverse,
+# 4. A string is an object from the String class. What are the methods reverse,
 capitalize, and length for in ruby?
 
 In Ruby, the reverse, capitalize, and length methods are part of the built-in String class. Here's what each of these methods does:
@@ -84,7 +84,7 @@ Example:
 str = "Hello, World!"
 reversed_str = str.reverse
 puts reversed_str
-# Output: "!dlroW ,olleH"
+Output: "!dlroW ,olleH"
 
 * capitalize: This method is used to capitalize the first character of a string while making all other characters lowercase. It returns a new string with the first character capitalized.
 
@@ -93,7 +93,7 @@ Example:
 str = "hello, world!"
 capitalized_str = str.capitalize
 puts capitalized_str
-# Output: "Hello, world!"
+Output: "Hello, world!"
 
 * length: This method is used to determine the length of a string, i.e., the number of characters it contains. It returns an integer representing the length of the string.
 
@@ -102,6 +102,6 @@ Example:
 str = "Hello, World!"
 str_length = str.length
 puts str_length
-# Output: 13
+Output: 13
 
 These methods are just a few examples of the many useful methods available in Ruby's String class for manipulating and working with strings.

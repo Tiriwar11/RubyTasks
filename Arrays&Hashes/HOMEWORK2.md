@@ -67,3 +67,7 @@ In the example above, an array [1, 2] is used as a key, and a hash { key: 'value
 # 5.  Write a hash that stores Colombia’s departments and their corresponding capital cities.
 
 >The code is here [Shape :mag_right:](departamentsColombia.rb)
+
+# 6.  Write a hash that stores Colombia’s autonomous systems’ codes and their corresponding names, according to https://radar.cloudflare.com/co
+
+>The code is here [Shape :mag_right:](autonomousSystemsColombia.rb)

@@ -1,4 +1,4 @@
-# HOMEWORK   :blue_book:
+# HOMEWORK 1   :blue_book:
 
 # 1. What is the difference between chomp and chop?
 

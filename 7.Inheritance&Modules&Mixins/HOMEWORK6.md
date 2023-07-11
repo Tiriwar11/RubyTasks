@@ -78,16 +78,19 @@ end
 * Create a Student object
 student1 = Student.new("John Doe", "123 Main St", "555-1234", 20)
 puts student1.to_s
+
 Output: Name: John Doe, Age: 20, Address: 123 Main St, Phone: 555-1234
 
 * Create a GraduateStudent object
 grad_student1 = GraduateStudent.new("Jane Smith", "456 Elm St", "555-5678", 30, "Computer Science")
 puts grad_student1.to_s
+
 Output: Jane Smith (30 years old) - Thesis Topic: Computer Science
 
 * Change address of a student
 student1.change_address("789 Oak St")
 puts student1.to_s
+
 Output: Name: John Doe, Age: 20, Address: 789 Oak St, Phone: 555-1234
 
 * Create a Course object
@@ -95,16 +98,19 @@ course1 = Course.new("Mathematics", "Fall 2023")
 course1.add_student(student1)
 course1.add_student(grad_student1)
 puts course1.students.inspect
+
 Output: [#<Student:0x00007fcfd503d280>, #<GraduateStudent:0x00007fcfd503d238>]
 
 * Remove a student from a course
 course1.remove_student(student1)
 puts course1.students.inspect
-- Output: [#<GraduateStudent:0x00007fcfd503d238>]
+
+Output: [#<GraduateStudent:0x00007fcfd503d238>]
 
 * Add a course to a Course object
 course1.add_course("History", "Spring 2024", { professor: "Dr. Johnson", room: "456", credits: 4 })
 puts course1.courses.inspect
-- Output: [{:name=>"History", :semester=>"Spring 2024", :data=>{:professor=>"Dr. Johnson", :room=>"456", :credits=>4}}]
+
+Output: [{:name=>"History", :semester=>"Spring 2024", :data=>{:professor=>"Dr. Johnson", :room=>"456", :credits=>4}}]
 
 >The code is here [Shape :mag_right:](Homework6.rb)

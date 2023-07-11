@@ -62,11 +62,59 @@ In the first case, obj1 is created without any arguments, so arg1 will be set to
 In the second case, obj2 is created with one argument, so arg1 will be set to "value", and arg2 will be set to "default".
 
 In the third case, obj3 is created with two arguments, so arg1 will be set to "value1", and arg2 will be set to "value2".
+
 # 3. Create a Student class with the following components:
 
+class Student
+
 * Instance attributes: full name, address, phone, age
+
+attr_reader :full_name, :address, :phone, :age
+
 * A class attribute with the name of the university
+
+@@university = "ABC University"
+
 * The initialize method
+
+def initialize(full_name, address, phone, age)
+    @full_name = full_name
+    @address = address
+    @phone = phone
+    @age = age
+end
+
 * Only reader accessors for all the attributes
+
+def self.university
+    @@university
+end
+
 * A method that returns true if the student is underage
+
+def underage?
+    @age < 18
+end
+
 * A method that returns true if the student’s age is more than 27
+
+def age_above_27?
+    @age > 27
+end
+
+end
+
+Here's an example usage of the Student class:
+
+student = Student.new("John Doe", "123 Main St", "555-1234", 25)
+puts student.full_name  # Output: John Doe
+puts student.address    # Output: 123 Main St
+puts student.phone      # Output: 555-1234
+puts student.age        # Output: 25
+
+puts Student.university  # Output: ABC University
+
+puts student.underage?    # Output: false
+puts student.age_above_27?  # Output: false
+
+>The code is here [Shape :mag_right:](Homework5.rb)
